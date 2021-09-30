@@ -1,7 +1,7 @@
 import {Modal, Alert, Button} from 'react-bootstrap'
 import useAuth from '../../../auth/useAuth'
 
-export default function DeleteModal( {isOpen, close}){
+export default function Modal( {isOpen, close}){
 
     const {logout} = useAuth()
 
@@ -13,8 +13,8 @@ export default function DeleteModal( {isOpen, close}){
 
     return (
         <Modal show={isOpen} onHide={close}>
-            <Modal.Header >
-                <Modal.Title>Mis Notas</Modal.Title>
+            <Modal.Header closeButton>
+                <Modal.Title>Semanal</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <Alert variant="primary"> 
@@ -22,48 +22,30 @@ export default function DeleteModal( {isOpen, close}){
                 <table class="table table-primary">
   <thead>
     <tr>
+      <th scope="col">Día</th>
+      <th scope="col">Hora</th>
+      <th scope="col">Grado</th>
       <th scope="col">Materia</th>
-      <th scope="col">Periodo 1</th>
-      <th scope="col">Periodo 2</th>
-      <th scope="col">Periodo 3</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Español</th>
-      <td>3.5</td>
-      <td>3.7</td>
-      <td>4.0</td>
+      <th scope="row">lunes</th>
+      <td>7:00 am</td>
+      <td>803</td>
+      <td>Sociales</td>
     </tr>
     <tr>
-      <th scope="row">Matemáticas</th>
-      <td>4.0</td>
-      <td>3.3</td>
-      <td>4.3</td>
+      <th scope="row">martes</th>
+      <td>9:00 am</td>
+      <td>1101</td>
+      <td>Biología</td>
     </tr>
     <tr>
-      <th scope="row">Sociales</th>
-      <td>4.3</td>
-      <td>3.2</td>
-      <td>3.4</td>
-    </tr>
-    <tr>
-      <th scope="row">Biología</th>
-      <td>4.0</td>
-      <td>4.2</td>
-      <td>3.4</td>
-    </tr>
-    <tr>
-      <th scope="row">Física</th>
-      <td>3.3</td>
-      <td>4.2</td>
-      <td>4.4</td>
-    </tr>
-    <tr>
-      <th scope="row">Química</th>
-      <td>4.3</td>
-      <td>3.2</td>
-      <td>3.6</td>
+      <th scope="row">jueves</th>
+      <td>2:00 pm</td>
+      <td>1101</td>
+      <td>Sociales</td>
     </tr>
   </tbody>
 </table>
