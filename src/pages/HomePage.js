@@ -7,7 +7,7 @@ export default function HomePage(){
         <Container>
             <Row className="mt-5">
                 <Col>
-                <p class="p-2 bg-dark text-white"><h5>INGRESO PARA DOCENTES DEL COLEGIO NUEVA GRANADA</h5></p>
+                <p class="p-2 bg-info text-white"><h5>INGRESO PARA ESTUDIANTES DEL COLEGIO NUEVA GRANADA</h5></p>
                <p>Para ingresar, presiona en el botón de abajo e inicia sesión con los datos que te proporcionaron</p> 
                <div>
                    <Button as={Link} to={rutas.login}>Ingresar</Button>

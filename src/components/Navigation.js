@@ -8,9 +8,9 @@ export default function Navigation() {
     const { logout, user } = useAuth();
 
     return (
-        <Navbar collapseOnSelect expand="lg" variante="dark" bg="secondary">
+        <Navbar collapseOnSelect expand="lg" variante="withe" bg="withe">
             <Navbar.Brand as={NavLink} to={rutas.home}>
-            &nbsp; INICIO
+            &nbsp; Inicio
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -29,12 +29,12 @@ export default function Navigation() {
                     {!user ? (
                         <>
                             <Nav.Link as={NavLink} to={rutas.login}>Iniciar Sesión</Nav.Link>
-                            <Nav.Link as={NavLink} to={rutas.register}>Registrarse</Nav.Link>
+                            {/* <Nav.Link as={NavLink} to={rutas.register}>Registrarse</Nav.Link> */}
                         </>
                     ) : (
                         <>
                             <Nav.Link as={NavLink} to={rutas.account}>Mi cuenta</Nav.Link>
-                            <Nav.Link as={NavLink} to={rutas.login} onClick={logout}>Cerras Sesión</Nav.Link>
+                            <Nav.Link as={NavLink} to={rutas.login} onClick={logout}>Cerra Sesión</Nav.Link>
                         </>
                     )}
 

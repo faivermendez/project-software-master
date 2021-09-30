@@ -35,7 +35,7 @@ export default function LoginPage() {
         <form onSubmit={handleLogin}>
         <input id="usuario" type="text" class="fadeIn second" name="usuario" value={user.usuario} onChange={handleChange} placeholder="usuario"/>
         
-        <input id="password" type="text" class="fadeIn second" name="password" value={user.password} onChange={handleChange} placeholder="contraseña"/>
+        <input id="password" type="password" class="fadeIn third" name="password" value={user.password} onChange={handleChange} placeholder="contraseña"/>
         <input type="submit" class="fadeIn fourth" value="Iniciar Sesión"/>
     </form>
     </div>  
